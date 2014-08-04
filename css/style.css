@@ -1,0 +1,65 @@
+@font-face{
+	font-family: 'roboto';
+	src: url('font/Roboto-Light.ttf');
+}
+body {
+	font-family: 'roboto';
+	margin: 0;
+	background-image: url('../img/DeathtoStock_Wired3.jpg');
+	background-size: 1367px 768px;
+}
+.themeContainer {
+	
+	background-repeat: none;
+	padding: 1em;
+}
+.topbar {
+	font-family: 'roboto';
+	height: 4em;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	color :#fff;
+	background-color: #11171C;
+}
+.theme {
+	display: inline-block;
+	width: 100%;
+	height: 4em;
+	text-align: left;
+	color :#fff;
+	opacity: 0.6;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+.themeLabel{
+	opacity: 1;
+	height:1em;
+	/*margin-top: 2.5em;*/
+	margin-left: 1em;
+	width: 50%;
+	display: inline-block;
+}
+.nb{
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	background-color: #fff;
+	border-radius: 50%;
+	/*margin-left: 3em;*/
+	text-align: center;
+	color:#555;
+	padding: 2em;
+}
+.t1{
+	background-color: #2ECD71;
+}
+.t2{
+	background-color: #E84C3D;
+}
+.t3{
+	background-color: #17A086;
+}
+.t4{
+	background-color: #F2C40F;
+}
