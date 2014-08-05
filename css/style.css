@@ -6,30 +6,31 @@ body {
 	font-family: 'roboto';
 	margin: 0;
 	background-image: url('../img/DeathtoStock_Wired3.jpg');
-	background-size: 1367px 768px;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 .themeContainer {
-	
+
 	background-repeat: none;
 	padding: 1em;
 }
 .topbar {
 	font-family: 'roboto';
-	height: 4em;
+	height: 2em;
 	width: 100%;
 	font-weight: bold;
 	text-align: center;
 	color :#fff;
-	background-color: #11171C;
+	background-color: #303030;
 }
 .theme {
-	display: inline-block;
+	position: relative;
 	width: 100%;
-	height: 4em;
+	height: 3em;
 	text-align: left;
 	color :#fff;
-	opacity: 0.6;
-	margin-bottom: 1em;
+	opacity: .8;
+	margin-bottom: 1.5em;
 	font-weight: bold;
 }
 .themeLabel{
@@ -37,19 +38,21 @@ body {
 	height:1em;
 	/*margin-top: 2.5em;*/
 	margin-left: 1em;
+	margin-top: .8em;
 	width: 50%;
 	display: inline-block;
 }
 .nb{
-	display: inline-block;
+	position: absolute;
 	height: 1em;
 	width: 1em;
 	background-color: #fff;
 	border-radius: 50%;
-	/*margin-left: 3em;*/
 	text-align: center;
-	color:#555;
-	padding: 2em;
+	color: #555;
+	padding: 1.5em;
+	bottom: -8px;
+	right: 15px;
 }
 .t1{
 	background-color: #2ECD71;
