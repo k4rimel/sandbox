@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/vendor/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- LIBS
+	<script type="text/javascript" src="lib/vendor/jquery.js"></script> -->
+	<script type="text/javascript" src="lib/vendor/zepto.min.js"></script>
+
+
+
+	<title>Themes</title>
+</head>
+<body>
+	<div class="app">
+		<div class="container">
+			<textarea name="" id="input" cols="75" rows="10"></textarea>
+			<div class="forwardSlashBtn button">/</div>
+			<div class="backSlashBtn button">\</div>
+		</div>
+	</div>
+	<script>
+		document.onreadystatechange = function () {
+		  	var state = document.readyState;
+			if (state == 'complete') {
+
+				var str = "";
+
+				$('#input').on('paste', function (e) {
+					var el = $(this);
+					setTimeout(function(){
+				    	str = el.val();
+					},0);
+
+				});
+
+				$(".forwardSlashBtn").click(function(event) {
+					var newStr = str.replace(/\\/g, '/');
+					$("#input").val(newStr);
+					str = newStr;
+				});
+				$(".backSlashBtn").click(function(event) {
+					var newStr = str.replace(/\//g, '\\');
+					$("#input").val(newStr);
+					str = newStr;
+				});
+
+		  	}
+		}
+	</script>
+</body>
+</html>
