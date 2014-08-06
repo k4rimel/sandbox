@@ -1,0 +1,15 @@
+<div class="box">
+	<div class="themeSection">
+		<div class="themeSectionHeader">
+			<div class="themeSectionTitle title s8 col">Themes</div>
+			<div class="addThemeButton s2 col button">New Theme</div>
+		</div>
+		<div class="themeSectionContent">
+			{{~it.themes :value:index}}
+				<div class="themeListItem" data-quizzes='{{=value.Theme.quizzes}}'>
+					<div class="themeLink">{{=value.Theme.label}}</div>
+				</div>
+			{{~}}
+		</div>
+	</div>
+</div>

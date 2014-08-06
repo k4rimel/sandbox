@@ -1,0 +1,8 @@
+<div class="question" data-correct-answer='{{=it.correctAnswer}}'>
+	{{=it.label}}
+</div>
+<div class="props">
+		{{~it.propositions :value:index}}
+		<div class="proposition" data-id='{{=value.id}}'>{{=value.label}}</div>
+		{{~}}
+</div>

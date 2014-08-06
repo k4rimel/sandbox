@@ -1,0 +1,13 @@
+<div class="quizList">
+	{{~it.quizzes :value:index}}
+	<div class='quizListItem {{=(value.Quiz.id % 2 === 0 ? "flag" : "")}}'>
+		<!-- <div class='difficulty {{=value.Quiz.difficulty}}'></div> -->
+		<div class='difficulty {{=value.Quiz.difficulty}}'><i class="fa fa-question-circle fa-3x"></i></div>
+		<div class="quiz">
+			<div class="quizLink" data-quiz-id="{{=value.Quiz.id}}">{{=value.Quiz.title}}</div>
+			<div class="questionNB">{{=value.Quiz.Questions.length}} {{=(value.Quiz.Questions.length === 1 ? "Question" : "Questions")}}</div>
+		</div>
+	</div>
+	{{~}}
+</div>
+

@@ -1,0 +1,29 @@
+{
+    "Quiz": {
+        "description" : "Quiz A bla bla bla",
+        "id" : "5",
+        "title": "Quiz E",
+        "difficulty" : "p5",
+		"Questions": [ {
+                "label": "What's your name ?",
+                "propositions":[
+                    {"id":"1", "label" : "Karim"},
+                    {"id":"2", "label" : "Jean-Jacques"},
+                    {"id":"3", "label" : "Firmain"},
+                    {"id":"4", "label" : "Martin"}
+                ],
+                "correctAnswer": "1"
+            },
+            {
+                "label": "How old are you ?",
+                "propositions":[
+                    {"id":"1", "label" : "18"},
+                    {"id":"2", "label" : "23"},
+                    {"id":"3", "label" : "45"},
+                    {"id":"4", "label" : "1000"}
+                ],
+                "correctAnswer": "2"
+            }
+        ]
+    }
+}

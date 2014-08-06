@@ -1,0 +1,27 @@
+{
+    "Quiz": {
+        "description" : "Quiz B bla bla bla",
+        "id" : "7",
+        "title": "Quiz G",
+        "difficulty" : "p2",
+		"Questions": [ {
+                "label": "Where do you live ?",
+                "propositions":[
+                    {"id": "1", "label": "Paris"},
+                    {"id": "2", "label": "Moscow"},
+                    {"id": "3", "label": "Montpellier"}
+                ],
+                "correctAnswer": "3"
+            },
+            {
+                "label": "What is your job ?",
+                "propositions":[
+                    {"id": "1" ,"label": "Doctor"},
+                    {"id": "2" ,"label": "Developper"},
+                    {"id": "3" ,"label": "Carpenter"}
+                ],
+                "correctAnswer": "2"
+            }
+        ]
+    }
+}

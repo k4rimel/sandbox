@@ -1,0 +1,19 @@
+{
+    "Quiz": {
+        "description" : "Quiz A bla bla bla",
+        "id" : "4",
+        "title": "Quiz D",
+        "difficulty" : "p4",
+		"Questions": [ {
+                "label": "What's your name ?",
+                "propositions":[
+                    {"id":"1", "label" : "Karim"},
+                    {"id":"2", "label" : "Jean-Jacques"},
+                    {"id":"3", "label" : "Firmain"},
+                    {"id":"4", "label" : "Martin"}
+                ],
+                "correctAnswer": "1"
+            }
+        ]
+    }
+}

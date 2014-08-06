@@ -1,0 +1,51 @@
+{
+    "Quiz": {
+        "description" : "Quiz C bla bla bla",
+        "id" : "3",
+        "title": "Quiz C",
+        "difficulty" : "p3",
+		"Questions": [ {
+                "label": "How tall are you ?",
+                "propositions":[
+                    {"id":"1", "label" : "1m50"},
+                    {"id":"2", "label" : "1m65"},
+                    {"id":"3", "label" : "2m05"},
+                    {"id":"4", "label" : "1m70"}
+                ],
+                "correctAnswer": "4"
+            },
+            {
+                "label": "What's your favorite color",
+                "propositions":[
+                    {"id":"1", "label" : "Black"},
+                    {"id":"2", "label" : "Red"},
+                    {"id":"3", "label" : "Purple"},
+                    {"id":"4", "label" : "Blue"},
+                    {"id":"5", "label" : "Green"}
+                ],
+                "correctAnswer": "5"
+            },
+            {
+                "label": "What's your birth year ?",
+                "propositions":[
+                    {"id":"1", "label" : "2014"},
+                    {"id":"2", "label" : "50 B.C."},
+                    {"id":"3", "label" : "1991"},
+                    {"id":"4", "label" : "1975"}
+                ],
+                "correctAnswer": "3"
+            },
+            {
+                "label": "What color are your eyes",
+                "propositions":[
+                    {"id":"1", "label" : "black"},
+                    {"id":"2", "label" : "white"},
+                    {"id":"3", "label" : "pink"},
+                    {"id":"4", "label" : "orange"},
+                    {"id":"5", "label" : "brown"}
+                ],
+                "correctAnswer": "5"
+            }
+        ]
+    }
+}
