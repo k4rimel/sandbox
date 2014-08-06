@@ -48,9 +48,6 @@ body {
 .col {
 	display: inline-block;
 }
-/*.themeSectionTitle {
-	width: 38.89em;
-}*/
 .section {
 
 }
@@ -100,4 +97,16 @@ body {
 }
 .s9 {
 	width: 90%;
+}
+.link {
+	cursor: pointer;
+	color: #4e8abe;
+	font-size: 1.3em;
+}
+.link:hover {
+	font-family: 'robotoBold';
+	color: #316FA7;
+}
+.themeListItem {
+	padding: .5em 0em;
 }

@@ -8,6 +8,7 @@ var DashboardView = function ( model ) {
 DashboardView.prototype.output = function () {
 	var instance = this;
 	var modelData = instance.model;
+	console.log(modelData);
 	var htmlData;
 	var template;
 	var tempFunc;
@@ -19,6 +20,7 @@ DashboardView.prototype.output = function () {
   		dataType: 'html',
   		async: false,
   		success: function(data){
+
  	  		template = data;
  	  		tempFunc = doT.template(template);
  	  		html = tempFunc(modelData);

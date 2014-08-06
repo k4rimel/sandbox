@@ -4,7 +4,18 @@
  */
 
 var DashboardModel = function (data) {
-	this.Themes = data;
+	this.themes = data;
+	this.getTheme = function(id) {
+		if(this.themes.length > 1) {
+			for (var i = 0; i < this.themes.length; i++) {
+				if(this.themes[i].Quiz.id === id) {
+					return this.themes[i].Quiz;
+				}
+			};
+		} else {
+			return this.themes[0].Quiz;
+		}
+	}
 	return this;
 };
 DashboardModel.find = function () {
@@ -27,6 +38,7 @@ DashboardModel.getData = function (args) {
 	  		dataType: 'json',
 	  		async: false,
 	  		success: function(data){
+	  			console.log(data);
 			 	outputData.push(data);
 	  		},
 	  		error: function(xhr, type){

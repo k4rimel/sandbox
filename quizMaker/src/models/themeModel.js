@@ -19,7 +19,7 @@ ThemeManagerModel.find = function () {
 	var args = arguments[0];
 	var managerData = this.getData(args);
 
-	
+
 	var manager = new ThemeManagerModel(managerData)
 	return manager;
 };
@@ -34,13 +34,14 @@ ThemeManagerModel.getData = function (args) {
 	  		dataType: 'json',
 	  		async: false,
 	  		success: function(data){
-			 	outputData.push(data);	
+	  			console.log(data);
+			 	outputData.push(data);
 	  		},
 	  		error: function(xhr, type){
 	  			console.log("error");
 	  		}
 		});
 	};
-	
+
 	return outputData;
 };

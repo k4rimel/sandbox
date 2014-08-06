@@ -9,7 +9,6 @@ var DashboardController = function () {
 DashboardController.prototype.init = function () {
 	var that = this;
 	var themes = that.getThemeList();
-
 	if(typeof(themes) !== 'undefined') {
 		that.loadThemes.apply(that, themes);
 	}
@@ -32,7 +31,6 @@ DashboardController.prototype.getThemeList = function () {
 	return themeFiles;
 }
 DashboardController.prototype.loadThemes = function () {
-	console.log(arguments);
 	var model = DashboardModel.find(arguments);
 	var view = new DashboardView(model);
 
